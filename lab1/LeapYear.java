@@ -8,7 +8,7 @@ public class LeapYear {
      */
     public static boolean isLeapYear(int year){
         /**Accepts int input and calculates if it is divisible by 400 or by 4 and not 100, in which case it is a leap year and returns true. Vice versa */
-        if(year%400==0 || year%4==0 && year%100!=0){
+        if(year%400==0 || (year%4==0 && year%100!=0)){
             return true;
         }
         return false;
